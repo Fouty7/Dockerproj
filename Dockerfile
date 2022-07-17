@@ -5,6 +5,6 @@ WORKDIR /app
 COPY . app.py /app/
 
 
-RUN pip uninstall MySQL_python
+RUN pip uninstall MySQL_python \
     pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
